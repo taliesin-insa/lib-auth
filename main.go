@@ -10,14 +10,14 @@ import (
 	"os"
 )
 
-/*const (
+const (
 	RoleAdmin = iota
 	RoleAnnotator = iota
-)*/
+)
 
 type UserData struct {
 	Username	string
-	Role		string
+	Role		int
 }
 
 type VerifyRequest struct {
