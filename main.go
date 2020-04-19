@@ -58,7 +58,7 @@ func AuthenticateUser(r *http.Request) (*UserData, error, int) {
 	jsonErr := json.Unmarshal(authResBody, &user)
 
 	if jsonErr != nil {
-		log.Printf("[LIB AUTH] Error parsing auth/verifyToken: %v", jsonErr.Error())
+		log.Printf("[LIB AUTH] Error parsing auth/verifyToken: %v, error was %v", authResBody, jsonErr.Error())
 		return nil, errors.New("error parsing auth/verifyToken"), http.StatusInternalServerError
 	}
 
