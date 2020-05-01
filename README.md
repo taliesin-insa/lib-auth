@@ -6,7 +6,7 @@ It is a simple wrapper around the auth microservice API, it delegates all the lo
 ## How to use
 
 1. Add the library to the imports of your go files `import "github.com/taliesin-insa/lib-auth"`
-2. Make sure that the environment variable `AUTH_URL_API` contains the URL to the auth microservice
+2. Make sure that the environment variable `AUTH_API_URL` contains the URL to the auth microservice
 3. Call the method  `AuthenticateUser(r *http.Request)` with a request as a parameter to verify that the request was issued by a legitimate User and get its identity
 
 ## API
